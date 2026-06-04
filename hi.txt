@@ -1,3 +1,5 @@
-This is my first change 
+Merge Cconflict<><><>
+Resolving
+<><><>
 
 Second one
