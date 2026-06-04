@@ -2,7 +2,5 @@ Merge Cconflict<><><>
 Resolving
 <><><>
 
-Second one
-HI HELLO 
-
-My name is 
+One two 
+Hello
