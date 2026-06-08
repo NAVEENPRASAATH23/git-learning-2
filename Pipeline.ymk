@@ -1,0 +1,48 @@
+
+
+name: Student Demo
+
+on:
+  push:
+
+jobs:
+  demo:
+
+    steps:
+
+      - name: Welcome
+        run: echo "Welcome Students"
+
+      - name: Build Application
+        run: echo "Building Application"
+
+      - name: Deploy Application
+        run: echo "Deploying Application"
+
+name: Student Demo Pipeline
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+
+jobs:
+
+  build:
+    steps:
+
+      - name: Welcome Message
+        run: echo "Building Application"
+
+      - name: Compile Code
+        run: echo "Compiling Code"
+
+  deploy:
+    steps:
+
+      - name: Deploy Application
+        run: echo "Deploying Application"
+
+      - name: Deployment Complete
+        run: echo "Application Deployed Successfully"
