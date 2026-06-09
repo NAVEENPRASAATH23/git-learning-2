@@ -1,0 +1,23 @@
+name: Student Demo
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Step
+        run: echo "Building Application"
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Step
+        run: echo "Deploying Application"
