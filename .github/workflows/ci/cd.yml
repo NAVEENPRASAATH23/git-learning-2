@@ -1,0 +1,21 @@
+name: Docker Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Copying source code
+        uses: actions/checkout@v4 
+
+      - name: Docker image build
+        run: docker build -t web-app:v1 .
+
+      - name : Image Verification 
+        run: docker images
+
